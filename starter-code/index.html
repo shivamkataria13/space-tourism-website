@@ -6,22 +6,65 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   
-  <title>Frontend Mentor | Space tourism website</title>
+  <title>Space tourism website</title>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="script.js" defer></script>
 </head>
+
 <body>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
 
-  So, you want to travel to
-  Space
-  Let’s face it; if you want to go to space, you might as well genuinely go to 
-  outer space and not hover kind of on the edge of it. Well sit back, and relax 
-  because we’ll give you a truly out of this world experience!
+  
+  
+  
+  <main class="main">
+    
+    <header class="header">
+          
+      <nav class="navbarholder">
+  
+          <a href="index.html"><img src="assets/shared/logo.svg" class="logo" alt="logo"></a>
+          
+          <ul class="navbar">
+              <div>
+                  <button class="none navCloseBtn" type="button" title="menu-closebtn"><img src="assets/shared/icon-close.svg" alt="" class="menu-closeimg"></button>
+              </div>
+              
+              <a href="index.html"><li class="activePage"> <strong>00</strong>  Home</li></a>
+              <a href="destination-moon.html"><li> <strong>01</strong>  Destination</li></a>
+              <a href="crew-commander.html"><li> <strong>02</strong>  Crew</li></a>
+              <a href="technology-vehicle.html"><li> <strong>03</strong>  Technology</li></a>
+            </ul>
+            
+            <div class="btn">
+              <button class="navOpenBtn" type="button" title="menubtn"><img src="assets/shared/icon-hamburger.svg" alt="" class="menuimg"></button>
+            </div>
+            
+          </nav>
+          
+          
+    </header>
+    
+    <section class="home" >
 
-  Explore
+          <div class="homeText">
+            <p class="headingText">So, you want to travel to</p>
+            <h1>Space</h1>
+            <p>Let’s face it; if you want to go to space, you might as well genuinely go to 
+              outer space and not hover kind of on the edge of it. Well sit back, and relax 
+              because we’ll give you a truly out of this world experience!</p>
+          </div>
+            
+          <a href="destination-moon.html"><button class="explore">Explore</button></a>
+        
+        </section>
+      
+    </main>
+      
+  
+
+
 
 </body>
 </html>
