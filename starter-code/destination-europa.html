@@ -5,34 +5,106 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="module" src="script.js" defer></script>
   
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 <body>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
 
-  01 Pick your destination
 
-  Moon
-  Mars
-  Europa
-  Titan
+  <main class="mainDestination mainDestinationEuropa">
 
-  Europa
+    
 
-  The smallest of the four Galilean moons orbiting Jupiter, Europa is a 
-  winter lover’s dream. With an icy surface, it’s perfect for a bit of 
-  ice skating, curling, hockey, or simple relaxation in your snug 
-  wintery cabin.
+  
+    <header class="header">
+          
+      <nav class="navbarholder">
+  
+          <a href="index.html"><img src="assets/shared/logo.svg" class="logo" alt="logo"></a>
+          
+          <ul class="navbar">
+              <div>
+                  <button class="none navCloseBtn" type="button" title="menu-closebtn"><img src="assets/shared/icon-close.svg" alt="" class="menu-closeimg"></button>
+              </div>
+              
+              <a href="index.html"><li> <strong>00</strong>  Home</li></a>
+              <a href="destination-moon.html"><li class="activePage"> <strong>01</strong>  Destination</li></a>
+              <a href="crew-commander.html"><li> <strong>02</strong>  Crew</li></a>
+              <a href="technology-vehicle.html"><li> <strong>03</strong>  Technology</li></a>
+            </ul>
+            
+            <div class="btn">
+              <button class="navOpenBtn" type="button" title="menubtn"><img src="assets/shared/icon-hamburger.svg" alt="" class="menuimg"></button>
+            </div>
+            
+          </nav>
+          
+          
+    </header>
 
-  Avg. distance
-  628 mil. km
 
-  Est. travel time
-  3 years
+
+
+
+    <section class="destination destinationEuropa">
+
+      <div class="destinationImg">
+
+        <p class="headingText"> <span>01</span> PICK YOUR DESTINATION </p>
+        <img src="/starter-code/assets/destination/image-europa.png" alt="">
+
+      </div>
+
+      <div class="destinationInfo">
+
+        <nav>
+          <ul>
+            <a href="destination-moon.html"><li>MOON</li></a>
+            <a href="destination-mars.html"><li>MARS</li></a>
+            <a href="destination-europa.html"><li class="activeLi">EUROPA</li></a>
+            <a href="destination-titan.html"><li>TITAN</li></a>
+          </ul>
+        </nav>
+
+        <h1>Europa</h1>
+        <p>The smallest of the four Galilean moons orbiting Jupiter, Europa is a 
+          winter lover’s dream. With an icy surface, it’s perfect for a bit of 
+          ice skating, curling, hockey, or simple relaxation in your snug 
+          wintery cabin.</p>
+
+        <div class="line"></div>
+
+        <div class="destinationTravelInfo">
+
+          <div class="DTI1">
+            <p>Avg. distance</p>
+            <h5>628 mil. km</h5>
+          </div>
+          
+          <div class="DTI2">
+            <p>Est. travel time</p>
+            <h5>3 years</h5>
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+      
+
+
+
+
+  
+  </main>
+
+
+
 </body>
 </html>

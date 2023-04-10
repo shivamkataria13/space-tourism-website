@@ -24,10 +24,12 @@ body{
     background-color: var(--dark);
     color: white;
 
-    overflow: hidden;
+    overflow-x: hidden;
 
     height: 100vh;
     width: 100vw;
+
+    text-transform: uppercase;
 }
 button{
     cursor: pointer;
@@ -57,6 +59,7 @@ a{
 .header{
     position: sticky;
     z-index: 99;
+    height: 12%;
 }
 
 /* header */
@@ -133,7 +136,7 @@ a{
     background-color: #fff;
     
     position: absolute;
-    top: 1rem;
+    top: 1.5rem;
     left: 0;
 
 }
@@ -265,16 +268,17 @@ a{
 
 main{
     height: 100%;
+}
 
+.mainHome{
     background-image: url("/starter-code/assets/home/background-home-mobile.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-
 section{
-    height: 100%;
+    height: 88%;
     width: 100%;
     
     display: flex;
@@ -301,7 +305,7 @@ section{
 
 
 
-.home .headingText{
+.headingText{
     text-transform: uppercase;
     letter-spacing: 4.75px;
     font-size: 1rem;
@@ -361,10 +365,9 @@ button.explore:hover::after{
 
 @media (min-width:740px) {
     
-    .main{
-        background-image: url('/starter-code/assets/home/background-home-desktop.jpg');
+    .mainHome{
+        background-image: url('/starter-code/assets/home/background-home-tablet.jpg');
         background-position: right;
-
     }
     
     .home{
@@ -377,6 +380,11 @@ button.explore:hover::after{
 }
 
 @media (min-width:1024px) {
+
+    .mainHome{
+        background-image: url('/starter-code/assets/home/background-home-desktop.jpg') 
+    }
+
     
     .home{
         padding-inline: 9rem;
@@ -407,3 +415,241 @@ button.explore:hover::after{
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------DESTINATION ----------------- */
+
+.mainDestination{
+    background-image: url('/starter-code/assets/destination/background-destination-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.headingText span{
+    color: rgba(255, 255, 255, 0.45);
+    margin-right: .6rem;
+}
+
+.destinationImg img{
+    margin-top: 2rem;
+    width: 13rem;
+}
+
+.destinationInfo nav{
+    margin-bottom: 1.6rem;
+}
+
+.destinationInfo nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.destinationInfo nav li{
+    list-style: none;
+    letter-spacing: 2.6px;
+    position: relative;
+
+    color: white;
+}
+
+.destinationInfo nav li.activeLi::after{
+    content: "";
+    height: 2px;
+    width: 100%;
+    
+    background-color: #fff;
+    
+    position: absolute;
+    top: 1.5rem;
+    left: 0;
+
+}
+
+.destinationInfo nav li:hover::after{
+    content: "";
+    height: 2px;
+    width: 100%;
+    
+    background-color: #ffffff7b;
+    
+    position: absolute;
+    top: 1.5rem;
+    left: 0;
+}
+
+
+.destinationInfo h1{
+    font-size: 4rem;
+    font-family: var(--bellefair);
+    font-weight: 200;
+}
+
+.destinationInfo p{
+    letter-spacing: 1.3px;
+    line-height: 1.4rem;
+    font-size: .9rem;
+    color: var(--blue);
+
+    text-transform: lowercase;
+}
+
+.line{
+    height: 1px;
+    width: 100%;
+    background-color: #ffffff46;
+    margin-block: 1.3rem;
+}
+
+.DTI1, .DTI2{
+    margin: 2rem;
+}
+
+.DTI1 p, .DTI2 p{
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 2.3px;
+}
+
+.DTI1 h5, .DTI2 h5{
+    font-size: 1.7rem;
+    font-family: var(--bellefair);
+    font-weight: 200;
+    margin-top: 1rem;
+}
+
+
+@media (min-width:748px) { 
+
+    .mainDestination{
+        background-image: url('/starter-code/assets/destination/background-destination-tablet.jpg');
+    }
+
+    .destinationTravelInfo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .destinationImg{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 100%;
+    }
+
+    .destinationImg p{
+        align-self: flex-start;
+    }
+
+    /* .destinationImg img{
+        width: 13rem;
+    } */
+
+    .destinationInfo nav ul{
+        gap: 2.1rem;
+    }
+
+    .destinationInfo nav{
+        margin-bottom: 1.6rem;
+    }
+
+
+    .destinationInfo p{
+        margin-inline: 6rem;
+    }
+    
+    .line{
+        margin-block: 0;
+        margin-top: 1rem;
+    }
+
+    .DTI1, .DTI2{
+        margin: 1rem 0;
+    }
+
+
+
+
+}
+
+
+@media (min-width:1024px) { 
+
+    .mainDestination{
+        background-image: url('/starter-code/assets/destination/background-destination-desktop.jpg');
+    }
+
+    .destination{
+        flex-direction: row;
+        text-align: left;
+        gap:8rem;
+
+        padding-inline: 9rem;
+    }
+    
+    .destinationImg{
+        gap:1.3rem;
+    }
+    .destinationImg img{
+        width: 100%;
+        max-width: 26rem;
+        /* margin-right: auto; */
+    }
+
+    .destinationInfo nav ul{
+        justify-content: left;
+    }
+
+    .destination p{
+        margin: 0;
+    }
+
+    .destinationTravelInfo{
+        gap: 6rem;
+        justify-content: left;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
